@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class StatusUpdateMessage {
     private Long id;
     private Status status;
+    private String messageId;
 
     public Long getId() {
         return id;
@@ -20,6 +21,14 @@ public class StatusUpdateMessage {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public String getMessageId() {
+        return messageId;
+    }
+
+    public void setMessageId(String messageId) {
+        this.messageId = messageId;
     }
 
     @Override
